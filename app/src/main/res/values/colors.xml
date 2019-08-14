@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1a213c</color>
+    <color name="colorPrimaryDark">#1a213c</color>
+    <color name="colorAccent">#c23471</color>
+
+    <color name="menu_text_color">#69708f</color>
+    <color name="menu_bg_color">#1a213c</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="profit_tab_bg">#333c5e</color>
+    <color name="profit_tab_text_select">#ffffff</color>
+    <color name="profit_tab_text_unselect">#7c86a2</color>
+    <color name="exchange_info_text_color">#d4acbf</color>
+    <color name="green">#8cac82</color>
+</resources>

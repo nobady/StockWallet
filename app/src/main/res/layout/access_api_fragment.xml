@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/accessapi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.mac.ui_library.titlebar.TitleBar
+        android:id="@+id/titleBar_access_api"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        tools:title="@string/add_new_resp"
+        app:barStyle="night"
+        app:lineVisible="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleColor="@color/menu_text_color"
+        app:firstRightIcon="@mipmap/titlebar_menu_icon"
+        app:secondRightIcon="@mipmap/titlebar_polyline_icon"
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

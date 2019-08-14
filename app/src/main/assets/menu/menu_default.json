@@ -1,0 +1,32 @@
+[
+  {
+    "key": "profit",
+    "type": "system",
+    "iconStyle": 1,
+    "name": "持仓盈亏",
+    "nameEn": "profit_loss",
+    "iconNormal": "tab_btn_profit_normal",
+    "iconFocus": "tab_btn_profit_focus",
+    "selected": false
+  },
+  {
+    "key": "business",
+    "type": "system",
+    "name": "交易",
+    "nameEn": "business",
+    "iconNormal": "tab_btn_business_normal",
+    "iconFocus": "tab_btn_business_large",
+    "iconStyle": 2,
+    "selected": true
+  },
+  {
+    "key": "me",
+    "type": "system",
+    "name": "我",
+    "nameEn": "me",
+    "iconNormal": "tab_btn_me_normal",
+    "iconFocus": "tab_btn_me_focus",
+    "iconStyle": 1,
+    "selected": false
+  }
+]

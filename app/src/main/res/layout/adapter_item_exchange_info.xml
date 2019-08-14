@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/menu_bg_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/exchange_info_bi_type_tv"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        tools:text="USD"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exchange_info_name_tv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exchange_info_bi_type_tv"
+        android:textColor="@color/menu_text_color"
+        android:textSize="14sp"
+        tools:text="已聚合"
+        android:layout_marginStart="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/exchange_info_has_num_tv"
+        app:layout_constraintBaseline_toBaselineOf="@id/exchange_info_bi_type_tv"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        tools:text="280，356"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/menu_text_color"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/exchange_info_name_tv"
+        android:id="@+id/exchange_info_has_money_other_tv"
+        tools:text="120(BTC)"
+        />
+
+    <TextView
+        android:id="@+id/exchange_info_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/exchange_info_bi_type_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="280，356" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/green"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/exchange_info_name_tv"
+        android:id="@+id/exchange_info_present_tv"
+        tools:text="0.1%"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exchange_info_name_tv"
+        android:layout_marginTop="10dp"
+        android:background="@color/profit_tab_text_unselect"
+        />
+
+</android.support.constraint.ConstraintLayout>

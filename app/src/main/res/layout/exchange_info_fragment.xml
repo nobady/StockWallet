@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/menu_bg_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.mac.ui_library.titlebar.TitleBar
+        android:id="@+id/titleBar_exchange_info"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        tools:title="@string/add_new_resp"
+        app:barStyle="night"
+        app:lineVisible="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleColor="@color/menu_text_color"
+        app:firstRightIcon="@mipmap/titlebar_menu_icon"
+        app:secondRightIcon="@mipmap/titlebar_polyline_icon"
+        />
+
+    <TextView
+        android:id="@+id/tv_money_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titleBar_exchange_info"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="12sp"
+        android:textColor="@color/menu_text_color"
+        tools:text="资产=$6.64444"
+        />
+
+    <TextView
+        android:id="@+id/tv_money_rmb"
+        app:layout_constraintTop_toBottomOf="@id/tv_money_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        tools:text="459,3453"
+        />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_money_rmb"
+        android:id="@+id/money_change"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content">
+
+        <View
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/profit_tab_text_unselect"
+            android:id="@+id/view_line"
+            android:layout_height="60dp"/>
+
+        <TextView
+            android:id="@+id/tv_24hours_change"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@id/view_line"
+            app:layout_constraintTop_toTopOf="@id/view_line"
+            android:layout_width="wrap_content"
+            android:textColor="@color/exchange_info_text_color"
+            android:textSize="12sp"
+            tools:text="24小时资产变化"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_24hours_change_value"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            tools:text="15,144.17"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@id/view_line"
+            app:layout_constraintTop_toBottomOf="@id/tv_24hours_change"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/tv_history_profit"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/view_line"
+            app:layout_constraintTop_toTopOf="@id/view_line"
+            android:layout_width="wrap_content"
+            android:textColor="@color/exchange_info_text_color"
+            android:textSize="12sp"
+            tools:text="历史盈亏"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_history_profit_value"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            tools:text="15,144.17"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/view_line"
+            app:layout_constraintTop_toBottomOf="@id/tv_history_profit"
+            android:textColor="@color/white"
+            />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_profit_money"
+        android:layout_marginTop="20dp"
+        android:text="@string/has_money"
+        android:textSize="16sp"
+        android:textColor="@color/menu_text_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/money_change"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_bi_type"
+        android:text="@string/bi_type"
+        android:textSize="16sp"
+        android:textColor="@color/menu_text_color"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_profit_money"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_profit_money"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_price"
+        android:text="@string/price"
+        android:textSize="16sp"
+        android:textColor="@color/menu_text_color"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_profit_money"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_profit_money"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_profit_money"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/exchange_info_recyclerview"
+        android:background="@drawable/shape_exchange_recycler_bg"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

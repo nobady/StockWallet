@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">StockWallet</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="add_new_resp">添加新的持仓</string>
+
+    <string name="profit_api_tips">你的API Key和Secret会在本地通过AES算法加密，并不会上传至任何服务器，十分安全。你可以放心地用他们来追踪资产和交易</string>
+    <string name="profit_exchange_title">本土交易所</string>
+    <string name="imi_login_input_mail_error">登陆失效</string>
+    <string name="imi_const_tip_charge">服务不可用</string>
+    <string name="imi_server_error">服务内部出错</string>
+    <string name="imi_toast_common_net_error">请求失败</string>
+    <string name="has_money">持仓资产(CNY)</string>
+    <string name="bi_type">币种</string>
+    <string name="price">价格</string>
+    <string name="exchange_info_money_$">资产=$%s</string>
+    <string name="change_rate_24">%s(%s)</string>
+
+
+</resources>
